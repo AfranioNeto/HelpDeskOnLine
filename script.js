@@ -10,18 +10,8 @@ const data = {
             details: "Ao abrir um chamado atente-se ao correto preenchimento dos campos e direcionamento." +
               "<br>Para chamados de solicitação de criação de usuário, enviar as informações completas do usuário conforme orientação." +
               "<br>Para chamados de solicitação de manutenção, enviar informações completas sobre o problema conforme orientação." +
-              "<div class='actions' style='margin-top:12px; display:flex; gap:8px;'>" +
-                "<button data-action='abrir-chamado'>Abrir chamado</button>" +
-                "<button data-action='ver-tutorial'>Ver tutorial</button>" +
-              "</div>"
           },
-          { name: "Consultar um chamado", 
-            details: "Alteração da senha pelo usuário: Tela principal -> Menu Cadastros -> Trocar a senha do usuário ativo." },
-          { name: "Indicadores de eficiência", 
-            details: "Alteração da senha pelo usuário: Tela principal -> Menu Cadastros -> Trocar a senha do usuário ativo." }  
-        ]
-      },
-      {
+          {
         name: "Orientações para abertura de chamado",
         subtopics: [
           { name: "Solicitações de equipamentos e softwares", 
@@ -33,7 +23,7 @@ const data = {
           { name: "Solicitações sobre operação do sistema", 
             details: "Para registrar algum problema no sistema; <br> Apoio técnico sobre a operação do sistema; <br> Solicitações de senhas do TI; <br> Cadastros de usuários; <br>" +
             "Transferência de usuários entre filiais;<br>" +
-            "Nesses casos você pode falar com Ricardo." },
+            "Nesses casos você pode falar com Ricardo ou Afrânio." },
           { name: "Solicitações sobre alterações no sistema", 
             details: "<b>Apenas para reportar algum erro crítico no sistema ou solicitar novas funcionalidades.</b> <br>" +
             "Nesses casos você pode falar com Aluízio ou André." }
