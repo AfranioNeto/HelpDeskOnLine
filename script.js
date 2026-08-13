@@ -1,6 +1,5 @@
 // Dados de exemplo para macros, tópicos e subtópicos
 const data = {
-  const data = {
   macro1: {
     name: "Chamados",
     topics: [
@@ -108,8 +107,7 @@ const data = {
       }
     ]
   },
-
-    macro3: {
+  macro3: {
     name: "Operações mais frequentes (Sistema)",
     topics: [
       {
@@ -227,33 +225,25 @@ const data = {
   }
 };
 
+// Funções de manipulação do DOM
 const macroList = document.getElementById('macro-list');
 const topicMenu = document.getElementById('topic-menu');
 const subtopicsDiv = document.getElementById('subtopics');
 const detailsSection = document.getElementById('details');
 
 let currentMacro = 'macro1';
-let currentTopicIndex = 0;
 
-// Delegação de eventos para botões dentro da área de detalhes
+// Delegação de eventos
 detailsSection.addEventListener('click', (event) => {
   const target = event.target;
-  if (target.matches('button[data-action="abrir-chamado"]')) {
-    alert('Abrir chamado');
-  }
-  if (target.matches('button[data-action="ver-tutorial"]')) {
-    alert('Ver tutorial');
-  }
+  if (target.matches('button[data-action="abrir-chamado"]')) alert('Abrir chamado');
+  if (target.matches('button[data-action="ver-tutorial"]')) alert('Ver tutorial');
 });
 
-// Renderiza tópicos do macro selecionado
 function renderTopics(macroKey) {
   topicMenu.innerHTML = '';
-  if (!data[macroKey] || !Array.isArray(data[macroKey].topics)) {
-    subtopicsDiv.innerHTML = '';
-    detailsSection.innerHTML = '<p>Selecione um macro válido para carregar os tópicos.</p>';
-    return;
-  }
+  if (!data[macroKey]) return;
+
   const topics = data[macroKey].topics;
   topics.forEach((topic, idx) => {
     const li = document.createElement('li');
@@ -261,7 +251,7 @@ function renderTopics(macroKey) {
     btn.textContent = topic.name;
     btn.className = idx === 0 ? 'active' : '';
     btn.onclick = () => {
-      document.querySelectorAll('#topic-menu button').forEach(b => b.classList.remove('active'));
+      topicMenu.querySelectorAll('button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       renderSubtopics(macroKey, idx);
     };
@@ -271,15 +261,14 @@ function renderTopics(macroKey) {
   renderSubtopics(macroKey, 0);
 }
 
-// Renderiza subtópicos do tópico selecionado
 function renderSubtopics(macroKey, topicIdx) {
   subtopicsDiv.innerHTML = '';
   const subtopics = data[macroKey].topics[topicIdx].subtopics;
-  subtopics.forEach((sub, idx) => {
+  subtopics.forEach((sub) => {
     const btn = document.createElement('button');
     btn.textContent = sub.name;
     btn.onclick = () => {
-      document.querySelectorAll('.subtopics button').forEach(b => b.classList.remove('active'));
+      subtopicsDiv.querySelectorAll('button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       renderDetails(sub.details);
     };
@@ -288,13 +277,12 @@ function renderSubtopics(macroKey, topicIdx) {
   detailsSection.innerHTML = '<p>Selecione um subtópico para ver os detalhes.</p>';
 }
 
-// Renderiza detalhes do subtópico
 function renderDetails(text) {
   detailsSection.innerHTML = text;
 }
 
-// Troca macro
-macroList.querySelectorAll('li').forEach((li, idx) => {
+// Configuração dos itens do menu Lateral (Macros)
+macroList.querySelectorAll('li').forEach((li) => {
   li.onclick = () => {
     macroList.querySelectorAll('li').forEach(l => l.classList.remove('active'));
     li.classList.add('active');
