@@ -33,7 +33,7 @@ const data = {
           { name: "Solicitações sobre operação do sistema", 
             details: "Para registrar algum problema no sistema; <br> Apoio técnico sobre a operação do sistema; <br> Solicitações de senhas do TI; <br> Cadastros de usuários; <br>" +
             "Transferência de usuários entre filiais;<br>" +
-            "Nesses casos você pode falar com Afrânio ou Ricardo." },
+            "Nesses casos você pode falar com Ricardo." },
           { name: "Solicitações sobre alterações no sistema", 
             details: "<b>Apenas para reportar algum erro crítico no sistema ou solicitar novas funcionalidades.</b> <br>" +
             "Nesses casos você pode falar com Aluízio ou André." }
@@ -54,22 +54,8 @@ const data = {
             "ex: filial 0629 login: venda629<br>" +
             "Senha: Vendas<br><br>" +
             "Padrão para criação de novos usuários: Primeiro nome + número da filial (sem zero à esquerda) e sem espaço.<br>" +
-            "Ex: Usuário: João Silva - Filial 0629 - Login: JOAO629<br><br><br>" +
-            "<b>Todo cadastro de gerente de filial deve habilitar também a consulta ao depósito da respectiva filial.</b> <br>" +
-            "Lojas EletroKasa (EB) - Depósito de Jaciara (0601). <br>" +
-            "Lojas Móveis Estrela (HC) - Depósito de Inhumas (0300). <br>"
+            "Ex: Usuário: João Silva - Filial 0629 - Login: JOAO629<br><br><br>"
           }
-        ]
-      },
-      {
-        name: "Sistema - Permissionamento",
-        subtopics: [
-          { name: "Bloqueio de transferência para auditoria ou balanço",
-             details: "Cadastros -> Empresa/Filial -> Outras Configurações do Sistema -> Transferência base troca -> Marcar as 2 primeiras opções"},
-          { name: "Processar VENDA COM DESCONTO ACIMA DO PERMITIDO",
-             details: "Cadastros -> Empresa/Filial -> Configurações -> Venda OS -> Desmarcar o check: Processa Pré-Venda - Habilita verificar desconto e usuário que liberou o desconto"},
-          { name: "Senha para não gerar nota para filial", 
-             details: "Utilitários -> Senhas para filiais." }
         ]
       },
       {
@@ -99,11 +85,6 @@ const data = {
       {
         name: "Operações",
         subtopics: [
-          { name: "Buscar XML de notas", 
-            details: "NFCe -> Gerenciamento -> Apague as datas e preencha só o número da nota -> Clique em OK, " + 
-            "se a nota aparecer: Outras opções -> Consultar Status na SEFAZ - Selecione o certificado -> Procurar XML ->" + 
-            "C:\\Filiais\\NFC ou NFCE\\LOG. (Se der erro procure no outro computador). <br><br>" +
-            "Para alterar ou verificar XML de NFe tem que baixar do site da nota fiscal eletrônica: <a href='https://www.nfe.fazenda.gov.br/' target='_blank'>https://www.nfe.fazenda.gov.br/</a> e mudar no PROCNFE" },
           { name: "Cadastrar entrega que não consta no relatório", 
             details: "Manutenção -> Entrega -> Cadastro de entrega." },
           { name: "Cancelar baixa de CHEQUE", 
@@ -117,16 +98,11 @@ const data = {
                      "Se quiser devolver todas as mercadorias, clique diretamente na seta vermelha com sentido para DIREITA (->).<BR>" +
                      "Após selecionar as mercadorias, clique no botão FECHAMENTO <br>" +
                      "Se o sistema exibir uma CHAVE DE LIBERAÇÃO pedindo uma senha, solicite a senha ao Orlei ou Rodolfo."},    
-          { name: "Excluir o certificado digital antigo", 
-            details: "Executar o prompt de comando (Iniciar -> CMD) -> certmgr -> Pasta Pessoal -> Certificados -> Selecionar o certificado e excluir (X)." },  
           { name: "Imprimir nota a partir do cupom fiscal", 
             details: "Utilitários -> Gerador de senha para filiais ===>>> <br>" + 
             "Se for NFE: -> Página 1 -> Senha -> Nota Fiscal -> Importar Documento já importado em outra nota<br>" +
             "Se for NFC-E: -> Página 2 -> Senha -> Venda ECF -> Importação de documento. <br>" +
             "Pegar a senha com a contabilidade" },
-          { name: "Notas Fiscais não emitidas e o serviço de consulta da SEFAZ apontando erro", 
-            details: "Copiar os arquivos de proxy da pasta de suporte para os do computador com erro -> Rodar o ProxyOFF (compactado) -> " + 
-            "Ir nas opções de internet -> Avançadas -> Deixar só o TSL 1.2 habilitado -> Rodar o outro arquivo de Proxy -> Apagar o proxyOFF." },  
           { name: "Reimprimir NFCe", 
             details: "NFCe -> NFCe Gerenciamento -> Selecione a data, clique em OK -> Selecione a nota -> Clique em outras opções -> Reimprimir NFCe/ Danfe." },
           { name: "Retirar produto da reserva", 
