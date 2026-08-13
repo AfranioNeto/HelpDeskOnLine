@@ -9,7 +9,7 @@ const data = {
           { name: "Abrir um chamado",
             details: "Ao abrir um chamado atente-se ao correto preenchimento dos campos e direcionamento." +
               "<br>Para chamados de solicitação de criação de usuário, enviar as informações completas do usuário conforme orientação." +
-              "<br>Para chamados de solicitação de manutenção, enviar informações completas sobre o problema conforme orientação." +
+              "<br>Para chamados de solicitação de manutenção, enviar informações completas sobre o problema conforme orientação."
           },
           {
         name: "Orientações para abertura de chamado",
