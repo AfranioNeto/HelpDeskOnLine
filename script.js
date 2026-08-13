@@ -48,12 +48,7 @@ const data = {
         name: "Sistema - Configurações",
         subtopics: [
           { name: "Parâmetros Gerais",
-             details: "Senha padrão dos vendedores: Vendas<br>" + 
-            "login vendas todas filiais<br>" +
-            "venda=numeroFilialSemZeroAesquerda<br>" +
-            "ex: filial 0629 login: venda629<br>" +
-            "Senha: Vendas<br><br>" +
-            "Padrão para criação de novos usuários: Primeiro nome + número da filial (sem zero à esquerda) e sem espaço.<br>" +
+             details: "Padrão para criação de novos usuários: Primeiro nome + número da filial (sem zero à esquerda) e sem espaço.<br>" +
             "Ex: Usuário: João Silva - Filial 0629 - Login: JOAO629<br><br><br>"
           }
         ]
