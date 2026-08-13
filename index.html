@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Help Desk - Rede Estrela</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar de Macros -->
+    <aside class="sidebar">
+      <h2>Help Desk Estrela</h2>
+      <ul id="macro-list">
+        <li data-macro="macro1" class="active">Chamados</li>
+        <li data-macro="macro2">Apoio ao Suporte</li>
+        <li data-macro="macro3">Operações mais frequentes (Sistema)</li>
+      </ul>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <!-- Menu Suspenso de Tópicos -->
+      <nav class="top-menu">
+        <ul id="topic-menu">
+          <!-- Tópicos serão inseridos dinamicamente -->
+        </ul>
+      </nav>
+
+      <!-- Subtópicos -->
+      <div id="subtopics" class="subtopics">
+        <!-- Subtópicos serão inseridos dinamicamente -->
+      </div>
+
+      <!-- Detalhes do Subtópico -->
+      <section id="details" class="details">
+        <p>Selecione um subtópico para ver os detalhes.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
