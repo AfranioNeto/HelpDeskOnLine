@@ -1,32 +1,42 @@
 // Dados de exemplo para macros, tópicos e subtópicos
 const data = {
+  const data = {
   macro1: {
     name: "Chamados",
     topics: [
       {
         name: "Gestão de chamados",
         subtopics: [
-          { name: "Abrir um chamado",
+          { 
+            name: "Abrir um chamado",
             details: "Ao abrir um chamado atente-se ao correto preenchimento dos campos e direcionamento." +
               "<br>Para chamados de solicitação de criação de usuário, enviar as informações completas do usuário conforme orientação." +
               "<br>Para chamados de solicitação de manutenção, enviar informações completas sobre o problema conforme orientação."
-          },
-          {
+          }
+        ]
+      },
+      {
         name: "Orientações para abertura de chamado",
         subtopics: [
-          { name: "Solicitações de equipamentos e softwares", 
+          { 
+            name: "Solicitações de equipamentos e softwares", 
             details: "Solicitações sobre compra, manutenção, configuração e instalação de equipamentos como: <br>" +
             "Computadores, impressoras, teclados, mouses, scanners e outros periféricos;<br>" +
             "Solicitações de autorização de despesas referentes a equipamentos e softwares;<br>" +
             "Solicitações sobre internet, e-mail, PSI, etc.<br>" +
-            "Nesses casos você pode falar com Fabrício, Lucas ou Rogério." },
-          { name: "Solicitações sobre operação do sistema", 
+            "Nesses casos você pode falar com Fabrício, Lucas ou Rogério." 
+          },
+          { 
+            name: "Solicitações sobre operação do sistema", 
             details: "Para registrar algum problema no sistema; <br> Apoio técnico sobre a operação do sistema; <br> Solicitações de senhas do TI; <br> Cadastros de usuários; <br>" +
             "Transferência de usuários entre filiais;<br>" +
-            "Nesses casos você pode falar com Ricardo ou Afrânio." },
-          { name: "Solicitações sobre alterações no sistema", 
+            "Nesses casos você pode falar com Ricardo ou Afrânio." 
+          },
+          { 
+            name: "Solicitações sobre alterações no sistema", 
             details: "<b>Apenas para reportar algum erro crítico no sistema ou solicitar novas funcionalidades.</b> <br>" +
-            "Nesses casos você pode falar com Aluízio ou André." }
+            "Nesses casos você pode falar com Aluízio ou André." 
+          }
         ]
       }
     ]
