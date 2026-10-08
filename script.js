@@ -83,6 +83,21 @@ const data = {
             details: "Manutenção -> Entrega -> Cadastro de entrega." },
           { name: "Cancelar baixa de CHEQUE", 
             details: "FINANCEIRO -> Cheques Recebidos -> Cancela baixa / Recebimento." },
+          { name: "Cancelar Devolução", 
+            details: "Movimentação -> Estoque -> Devolução -> Cancelamento de Devolução." },
+          { name: "Cancelar Transferência", 
+            details: "Movimentação -> Estoque -> Transferência de saída -> Cancelamento." },
+          { name: "Devolução de Mercadoria do Depósito Centro Oeste (Somente EB)", 
+            details: "1 - O primeiro passo é fazer a Transferência dos itens que serão enviados para o Depósito Centro Oeste. <br>" +
+                    "Faça a Pré transferência dos itens a serem devolvidos para o depósito. <br>" +
+                    "Realize a movimentação do estoque normalmente por meio interno de transfêrencia. <br>" +
+                    "2 - Com a Pré transferência aceita pelo depósito, você deverá emitir uma nota de DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO. <br>" +
+                    "A nota fiscal deve ser emitida como DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO e não TRANSFERÊNCIA. <br>" +  
+                    "Escolha a opcão DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO antes de importar o documento de transferência para emitir a Nota. <br>" +
+                    "3 - Clique no botão NOTAS FISCAIS REFERENCIADAS para preencher os dados da nota de venda que veio do Depósito Centro Oeste para a filial. <br>" +
+                    "A Nota de Devolução precisa de ter os dados da nota de entrada <br>" +
+                    "Preencha todos estes campos de acordo com a nota de origem de venda do Depósito Centro Oeste e depois clique em SALVAR, para adicionar na grade logo abaixo. <br> " +
+                    "4 - Importe a transferência interna que foi feita para movimentar o estoque e finalize esta nota fiscal de devolução de compra."},
           { name: "Devolução por pedido", 
             details: "Para fazer uma devolução por pedido, siga os passos abaixo:<br>" +
                      "Acesse: Movimentação -> Estoque -> Devolução -> Devolução por pedido<br>" +
